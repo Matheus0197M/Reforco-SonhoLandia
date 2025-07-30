@@ -4,18 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="folha de estilo">
+    <link rel="stylesheet" href="styleme.css">
     <title>The ADM</title>
 </head>
 
-<body>
-    <header>
-        <h1>Matheus César</h1>
+<body
+    class="box-border bg-[url(https://wallpaperaccess.com/full/2133280.gif)] bg-no-repeat bg-center bg-cover bg-fixed text-white">
+    <header class="flex justify-evenly items-center p-3 bg-[rgba(0, 0, 0, 0.7)]">
+        <button class="">
+            <h1 class="text-5xl"><strong class="text-[#00ffaa]">Matheus</strong> <strong
+                    class="text-white">César</strong>
+            </h1>
+        </button>
+        <div id="linkMenu" class="flex justify-around items-center gap-5">
+            <a href="" class="text-white hover:text-green-300">Sobre mim</a>
+            <a href="" class="text-white hover:text-green-300">Serviços</a>
+            <button class="bg-[#00ffaa] p-3 rounded-md"><a href="">Contate-me</a></button>
+        </div>
     </header>
     <main>
-        <h2>Bem-vindo(a) ao meu perfil!</h2>
-        <p>Sou o ADM do site <strong>Sonholândia</strong></p>
+        <!-- Apresentação -->
+        <section class="flex flex-col h-[120dvh] p-4 justify-center bg-[rgba(0,0,0,0.4)]">
+            <h2 class="text-3xl">Bem-vindo(a) ao meu perfil!</h2><br>
+            <p class="text-2xl">Sou o ADM do site <strong>Sonholândia</strong> e de outros projetos também.</p>
+        </section>
+
+        <!-- Sobre mim -->
+        <section
+            class="flex flex-col bg-[rgba(0,0,0,0.9)] shadow-xs shadow-white h-[100dvh] p-4 justify-center items-center gap-4 mb-[80dvh]">
+            <h2 class="text-3xl">Quem sou eu?</h2>
+            <p class="text-left">Sou um jovem de 16 anos, que desde 2022 começou a gostar de programação, porém somente
+                do final de 2024
+                para 2025 que realmente comecei a fazer projetos de programação. Sou bem novo na área ainda, porém já
+                tenho conhecimento de: </p>
+            <div id="icons" class="flex gap-5">
+                <i class="ri-html5-fill w-[2rem]"></i>
+                <i class="ri-css3-fill"></i>
+                <i class="ri-tailwind-css-fill"></i>
+                <i class="ri-javascript-fill"></i>
+                <i class="ri-reactjs-line"></i>
+            </div>
+            <div id="iconsDescription" class="flex gap-5">
+                <p>HTML 5</p>
+                <p>CSS 3</p>
+                <p>Tailwind CSS</p>
+                <p>JavaScript</p>
+                <p>React</p>
+            </div>
+        </section>
+
+        <div id="imagemBackDois"
+            class="bg-[(https://th.bing.com/th/id/R.adb892e1036441459a1f8e0b8d165b8a?rik=RAm5sxboNvxosw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fGif-Wallpapers-HD-Free-Download.gif&ehk=2WFs935lm5TQBZSQyEYt%2bsZLVnoGeReg2VI1o5oD3QY%3d&risl=&pid=ImgRaw&r=0)] bg-no-repeat bg-center bg-cover bg-fixed text-white">
+            <!-- Serviços e o que já fiz -->
+            <section
+                class="flex flex-col bg-[rgba(0,0,0,0.9)] shadow-xs shadow-white h-[100dvh] p-4 justify-center items-center gap-4 mb-[80dvh]">
+                <h2 class="text-3xl">Meus projetos</h2>
+                <p class="text-left">Aqui estão alguns projetos que já fiz, seja sozinho ou com colegas de trabalho:
+                </p>
+                <div id="projetosSozinho"></div>
+                <div id="projetosSquad"></div>
+            </section>
+            <!-- Contate-me -->
+            <section
+                class="flex flex-col bg-[rgba(0,0,0,0.9)] shadow-xs shadow-white h-[100dvh] p-4 justify-center items-center gap-4">
+                <h2 class="text-3xl">Contate-me</h2>
+                <p class="text-left">Para entrar em contato comigo, basta clicar em dos botões abaixo: </p>
+                <div id="redeContato" class="flex gap-4">
+                    <button type="button">Whatsapp</button>
+                    <button type="button">Linkedin</button>
+                    <button type="button">Gmail</button>
+                </div>
+            </section>
     </main>
     <footer>Copyright © Todos os direitos reservados</footer>
+    </div>
 </body>
 
 </html>
